@@ -1,2 +1,1 @@
 # Zomorodyadak
-An Android Project
