@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">4dp</dimen>
+    <dimen name="standard_margin_x2">8dp</dimen>
+    <dimen name="standard_margin_x4">16dp</dimen>
+
+    <dimen name="standard_padding">4dp</dimen>
+    <dimen name="standard_padding_x2">8dp</dimen>
+    <dimen name="standard_padding_x4">16dp</dimen>
+
+    <dimen name="products_category_button_text_size">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_height">52dp</dimen>
+
+</resources>

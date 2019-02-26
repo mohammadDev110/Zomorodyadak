@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">زمردیدک</string>
+
+    <!--- Strings related for BottomNavigationViewItems -->
+    <string name="title_home">خانه</string>
+    <string name="title_products">محصولات</string>
+    <string name="title_user">کاربری</string>
+    <string name="title_search">جستجو</string>
+    <string name="title_agency">درخواست‌نمایندگی</string>
+
+    <!--- Strings related to category -->
+    <string name="pride">پراید</string>
+    <string name="peugeot_405">پژو 405</string>
+    <string name="peugeot_206">پژو 206</string>
+    <string name="el_navad">تندر 90</string>
+    <string name="neisan">نیسان</string>
+    <string name="zantia">زانتیا</string>
+    <string name="tiba">تیبا</string>
+    <string name="peykan">پیکان</string>
+    <string name="rio">ریو</string>
+    <string name="samand">سمند</string>
+
+    <string name="login_dont_have_account">آیا حساب کاربری ندارید؟</string>
+    <string name="login_create_account">ساخت حساب</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">شماره همراه</string>
+    <string name="prompt_password">رمزعبور</string>
+    <string name="action_sign_in">ورود یا ثبت نام</string>
+    <string name="action_sign_up">ثبت نام</string>
+    <string name="action_login">ورود</string>
+    <string name="error_invalid_email">ادرس ایمیل معتبر نیست</string>
+    <string name="error_invalid_password">رمزعبور کوتاه است</string>
+    <string name="error_incorrect_password">رمزعبور صحیح نیست</string>
+    <string name="lost_password">فراموشی رمزعبور</string>
+    <string name="error_response_25">اطلاعات اشتباه وارد شده. اگر رمز عبور خود را فراموش کردید با استفاده از فراموشی رمز ان را بازگردانید</string>
+    <string name="app_name_english">ZomorodYadak</string>
+
+    <!-- Strings related to sms verification -->
+    <string name="check_code_description">پیامکی حاوی کد تایید برای شما ارسال شده است.\nلطفا ان را وارد نمایید</string>
+    <string name="verification_code">کد فعالسازی</string>
+    <string name="confirm">تایید</string>
+    <string name="products_grid2">نمایش به صورت دوتایی</string>
+    <string name="products_grid3">نمایش به صورت سه تایی</string>
+    <string name="dismiss">انصراف</string>
+
+    <string name="agencyErrorDialogMessage">
+        لطفا تمامی فیلدها را تکمیل نمایید و سپس دوباره اقدام فرمایید.
+    </string>
+
+    <string name="agencySuccesfulMessage">"درخواست شما با موفقیت ثبت شد.\nدر اسرع وقت با شما تماس گرفته خواهد شد."</string>
+    <string name="loading_message">در حال ارتباط با سرور لطفا صبر نمایید...</string>
+    <string name="agency_user_exists">مشخصات شما قبلا ثبت شده. در اسرع وقت با شما تماس گرفته خواهد شد.</string>
+    <string name="farsi_digit">اب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی آ</string>
+    <string name="error_connection">مشکلی در برقراری ارتباط به وجود آمده\nلطفا دوباره تلاش کنید.</string>
+    <string name="retry">تلاش مجدد</string>
+
+</resources>

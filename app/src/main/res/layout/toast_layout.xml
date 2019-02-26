@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toast_root_layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/toast_background">
+
+    <ir.zomorodyadak.ui.widget.IranSansTextView
+        android:id="@+id/tv_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/standard_margin_x4"
+        tools:text="خطا در اتصال به اینترنت"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

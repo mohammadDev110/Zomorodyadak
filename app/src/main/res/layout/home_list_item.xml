@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0.1dp"
+    app:strokeColor="@color/gray_400"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_news_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="4dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_news_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                tools:background="@drawable/ic_launcher_background"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <ir.zomorodyadak.ui.widget.IranSansTextView
+            android:id="@+id/tv_news_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_news_item_image"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="32dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            tools:text="شیشستایشستنیاشسنیانسشتیانیاشنس" />
+
+        <ir.zomorodyadak.ui.widget.IranSansTextView
+            android:id="@+id/tv_data_created_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_news_item"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="@dimen/standard_margin_x2"
+            android:gravity="left"
+            android:textSize="14sp"
+            tools:text="1397 ابان" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

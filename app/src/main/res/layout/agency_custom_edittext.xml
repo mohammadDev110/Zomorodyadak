@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_custom_edittext_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="نام و نام خانوادگی"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/iransans_font"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        android:layout_marginBottom="-8dp"
+        android:padding="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransans_font"
+        app:backgroundTint="@color/gray_600"
+        tools:hint="نام و نام خانوادگی"
+        android:textColor="@color/text_primary_color"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:layout_below="@+id/tv_custom_edittext_hint"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_custom_edt_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_custom"
+        android:padding="4dp"
+        app:fontFamily="@font/iransans_font"
+        tools:text="لطفا مقدار را صحیح وارد کنید"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"
+        android:textColor="@color/errorHint"/>
+
+</merge>

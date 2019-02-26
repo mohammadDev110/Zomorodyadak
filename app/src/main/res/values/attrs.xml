@@ -1,0 +1,9 @@
+<resources>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="maxLength" format="integer"/>
+        <attr name="hint" format="string"/>
+        <attr name="digit" format="string"/>
+    </declare-styleable>
+
+</resources>

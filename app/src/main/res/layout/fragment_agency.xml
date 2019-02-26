@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/frag_agency_bg"
+    tools:context=".ui.fragment.AgencyFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/rv_agency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/logo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_agency_signup_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_agency"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <ir.zomorodyadak.ui.widget.erroable_edittext.CustomEditText
+                        android:id="@+id/edt_agency_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hint="نام و نام خانوادگی"
+                        app:digit="@string/farsi_digit"
+                        app:maxLength="100"/>
+
+                    <ir.zomorodyadak.ui.widget.erroable_edittext.CustomEditText
+                        android:id="@+id/edt_agency_code_meli"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_agency_name"
+                        app:hint="کدملی"
+                        app:maxLength="10"/>
+
+                    <ir.zomorodyadak.ui.widget.erroable_edittext.CustomEditText
+                        android:id="@+id/edt_agency_province"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edt_agency_code_meli"
+                        app:hint="استان"
+                        app:digit="@string/farsi_digit"
+                        app:maxLength="70"/>
+
+                    <ir.zomorodyadak.ui.widget.erroable_edittext.CustomEditText
+                        android:id="@+id/edt_agency_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edt_agency_province"
+                        app:hint="شهر"
+                        app:digit="@string/farsi_digit"
+                        app:maxLength="70"/>
+
+                    <ir.zomorodyadak.ui.widget.erroable_edittext.CustomEditText
+                        android:id="@+id/edt_agency_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/edt_agency_city"
+                        android:layout_marginBottom="24dp"
+                        app:hint="شماره تلفن: **09"
+                        app:maxLength="11" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_agency_submit"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_agency_signup_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/iransans_font"
+                android:paddingTop="8dp"
+                android:text="ثبت"
+                app:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/text_secondary_color"
+                android:clickable="false"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:cornerRadius="30dp" />
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

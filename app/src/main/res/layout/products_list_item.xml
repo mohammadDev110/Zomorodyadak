@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_products_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_products_item"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:padding="@dimen/standard_padding"
+                tools:background="@drawable/placeholder"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true" />
+
+            <ir.zomorodyadak.ui.widget.IranSansTextView
+                android:id="@+id/tv_products_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_products_item"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="@dimen/standard_padding"
+                android:layoutDirection="rtl"
+                android:textDirection="rtl"
+                tools:text="بوش طبق پراید"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
